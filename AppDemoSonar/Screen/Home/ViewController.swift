@@ -8,12 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var viewModel = HomeViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    func addItem() {
+        viewModel.add()
+    }
+    
+    func removeItem() {
+        viewModel.remove(index: 0)
+    }
 
 }
 
